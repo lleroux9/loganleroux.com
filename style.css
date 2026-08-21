@@ -1,0 +1,522 @@
+css
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: #ffffff;
+    color: #1a1a1a;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 14px 20px;
+
+    background: rgba(27, 26, 26, 0.96);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+
+    z-index: 1000;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+#nav a:hover {
+    color: #aaa;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+#header {
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px 80px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.92)
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#header p {
+    max-width: 850px;
+
+    margin-top: 25px;
+
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+    color: #dddddd;
+}
+
+#header i {
+    color: white;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 90px 30px;
+}
+
+.section h2 {
+    position: relative;
+
+    margin: 0 0 50px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    color: #171717;
+}
+
+.section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin-top: 12px;
+
+    background-color: #171717;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   ABOUT ME
+   ========================================================= */
+
+#bio {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.me {
+    width: 40%;
+    max-width: 450px;
+
+    border-radius: 30px;
+
+    object-fit: cover;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#bio-box {
+    flex: 1;
+}
+
+#bio-text {
+    padding: 0;
+
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+#bio-text p {
+    margin-top: 0;
+}
+
+#bio-imgs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.logos {
+    max-width: 30%;
+    height: auto;
+}
+
+#canada-flag {
+    max-width: 35%;
+}
+
+
+/* =========================================================
+   WORK EXPERIENCE
+   ========================================================= */
+
+#work {
+    max-width: none;
+
+    padding-left: max(30px, calc((100vw - 1140px) / 2));
+    padding-right: max(30px, calc((100vw - 1140px) / 2));
+
+    background-color: #fafafa;
+}
+
+.work-experience {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+
+    margin-bottom: 30px;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.work-experience:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.work-logo-box {
+    min-width: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background-color: #eeeeee;
+
+    border-radius: 15px;
+}
+
+.mid-logos {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+.work-text {
+    flex: 1;
+}
+
+.work-text h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    font-size: 1.7rem;
+}
+
+.work-text > p {
+    margin-top: 0;
+
+    color: #666;
+    font-weight: 500;
+}
+
+.work-text h4 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+    font-size: 1.1rem;
+}
+
+.work-text ul {
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+#projects > p {
+    margin-bottom: 35px;
+
+    color: #555;
+}
+
+.project-summary {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    margin-bottom: 30px;
+    padding: 30px;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-summary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project_pic_box {
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.project_pic_box img {
+    width: 100%;
+    max-width: none;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.project-summary .work-text h3 {
+    font-size: 1.6rem;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+#contact {
+    max-width: none;
+
+    margin: 0;
+
+    padding: 80px 20px;
+
+    background-color: #111111;
+
+    color: white;
+
+    text-align: center;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact h2::after {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: white;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+#contact a:hover {
+    color: #aaa;
+
+    border-bottom-color: #aaa;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    #nav {
+        gap: 20px;
+
+        padding: 12px 10px;
+    }
+
+    #nav a {
+        font-size: 14px;
+    }
+
+
+    #header {
+        min-height: 60vh;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #header h1 {
+        letter-spacing: 1px;
+    }
+
+
+    .section {
+        padding: 65px 20px;
+    }
+
+
+    #bio {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .me {
+        width: 75%;
+        max-width: 400px;
+    }
+
+
+    #bio-imgs {
+        justify-content: center;
+    }
+
+
+    .work-experience {
+        flex-direction: column;
+
+        padding: 25px;
+    }
+
+    .work-logo-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .mid-logos {
+        max-width: 200px;
+    }
+
+
+    .project-summary {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .project_pic_box {
+        width: 100%;
+    }
+
+    .project-summary .logos {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    #nav {
+        gap: 12px;
+    }
+
+    #nav a {
+        font-size: 12px;
+    }
+
+    .section h2 {
+        margin-bottom: 35px;
+    }
+
+    #bio-imgs {
+        gap: 15px;
+    }
+
+    .work-experience,
+    .project-summary {
+        padding: 20px;
+    }
+}

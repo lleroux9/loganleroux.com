@@ -1,14 +1,279 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Logan Leroux</title>
+
+    <link rel="icon" type="image/png" href="images/mylogo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to Logan Leroux's Personal Website</h1>
-    <hr>
-    <p>I am going to start building this out. It will be a personal project portfolio website for the most part</p>
-    <p>Come back in a bit to watch it evole</p>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Header -->
+    <section id="header">
+        <h1>HI, I'M LOGAN LEROUX</h1>
+
+        <p>
+            I'm a Mechatronics and Biomedical Engineering student passionate about
+            intelligent systems and their potential to reshape the future.
+            <i>What will you build?</i>
+        </p>
+    </section>
+
+
+    <!-- About Me -->
+    <section class="section" id="about-me">
+        <h2>About Me</h2>
+
+        <div id="bio">
+
+            <img
+                src="images/me.png"
+                alt="image-me"
+                class="me"
+            >
+
+            <div id="bio-box">
+
+                <div id="bio-text">
+                    <p>
+                        Currently completing my undergraduate education at the University of Western Ontario,
+                        where I am pursuing degrees in Mechatronics Systems Engineering and Biomedical Engineering.
+                        <br><br>
+                        After that, I hope to pursue a master's degree in Physical AI,
+                        deepening my understanding of how robots can perceive, plan, and perform
+                        intelligent work in the complex world we so effortlessly navigate.
+                    </p>
+                </div>
+
+                <div id="bio-imgs">
+                    <img
+                        src="images/canada.png"
+                        alt=""
+                        class="logos"
+                        id="canada-flag"
+                    >
+
+                    <img
+                        src="images/western.png"
+                        alt=""
+                        class="logos"
+                    >
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Work Experience -->
+    <section class="section" id="work">
+        <h2>Work Experiences</h2>
+
+        <div class="work-experience">
+
+            <div class="work-logo-box">
+                <img
+                    src="images/raytheon.png"
+                    alt=""
+                    class="mid-logos"
+                >
+            </div>
+
+            <div class="work-text">
+                <h3>Raytheon Technologies</h3>
+
+                <p>2025-2026 (16 months)</p>
+
+                <h4>
+                    Developed/Maintained in-house Manufacturing Execution System (MES)
+                </h4>
+
+                <ul>
+                    <li>Full featured (Modern UI, Relational DB, USB Scanner, Analysis Dashboards)</li>
+                    <li>Great software design allowed rapid feature deployment</li>
+                </ul>
+
+                <h4>
+                    Helped develop manufacturing/assembly solutions using robotics to meet increased demand and shortages in workforce
+                </h4>
+
+                <ul>
+                    <li>Difficult optical assemblies requiring micron level precision and active alignment</li>
+                </ul>
+
+                <h4>
+                    Designed multiple manufacturing/test fixtures for optical assemblies
+                </h4>
+
+                <ul>
+                    <li>Multi-component designs requiring well thought out datuming strategies</li>
+                </ul>
+
+                <h4>Product Testing</h4>
+
+                <ul>
+                    <li>Design of test apparatuses</li>
+                    <li>Conducted Shock Response Spectrum (SRS) and Vibration Testing</li>
+                    <li>Developed programs to process test data. Calculated boresight retention over a set of images and auto-generated test reports</li>
+                </ul>
+
+                <h4>Other</h4>
+
+                <ul>
+                    <li>Helped plan/setup the doubling of assembly lines to meet production needs</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="work-experience">
+
+            <div class="work-logo-box">
+                <img
+                    src="images/magna.png"
+                    alt=""
+                    class="mid-logos"
+                >
+            </div>
+
+            <div class="work-text">
+                <h3>Magna International</h3>
+
+                <p>2023 (4 months)</p>
+
+                <h4>Fixture Design</h4>
+
+                <ul>
+                    <li>2 CMM fixtures for automotive hinges</li>
+                </ul>
+
+                <h4>Assembly Issue Investigations</h4>
+
+                <ul>
+                    <li>Gathered many good/bad components off product and used CMM to identify vendor component tolerance non-complience.</li>
+                    <li>Identified </li>
+                </ul>
+
+                <h4>Other</h4>
+
+                <ul>
+                    <li>FMEA Document Creation</li>
+                    <li>3d-printed assembly aid for operators</li>
+                    <li>Light simulation (FEA) of custom wave washer design</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <p>
+            A bunch or cool projects. Just summaries. Full project details found on other page
+        </p>
+
+
+        <div class="project-summary">
+
+            <div class="project_pic_box">
+                <img
+                    src="images/PCB_Ruller.jpeg"
+                    alt=""
+                    class="logos"
+                >
+            </div>
+
+            <div class="work-text">
+                <h3>Digital Logic Demo Board</h3>
+
+                <p>2026</p>
+
+                <ul>
+                    <li>Designed in Altium Designer</li>
+                    <li>Assembled in home workshop</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="project-summary">
+
+            <div class="project_pic_box">
+                <img
+                    src="images/LogicBoard.jpeg"
+                    alt=""
+                    class="logos"
+                >
+            </div>
+
+            <div class="work-text">
+                <h3>Digital Logic Demo Board</h3>
+
+                <p>2026</p>
+
+                <ul>
+                    <li>Designed in Altium Designer</li>
+                    <li>Assembled in home workshop</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+
+        <h2>Contact</h2>
+
+        <div>
+            <p>
+                LinkedIn:
+                <a
+                    href="https://www.linkedin.com/in/logan-leroux-4b6a46259/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Logan Leroux
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a
+                    href="https://github.com/lleroux9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    lleroux9
+                </a>
+            </p>
+
+            <p>Email: loganleroux@gmail.com</p>
+        </div>
+
+    </section>
+
 </body>
 </html>
+```
